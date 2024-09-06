@@ -6,6 +6,11 @@ function nextPage(pageNumber) {
   currentPage = pageNumber;
 }
 
+function startMusic() {
+  const audio = document.getElementById('backgroundMusic');
+  audio.play();
+}
+
 // Initialize the first page
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('page1').style.display = 'block';
