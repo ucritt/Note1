@@ -9,6 +9,7 @@ function nextPage(pageNumber) {
 function startMusic() {
   const audio = document.getElementById('backgroundMusic');
   audio.play();
+  document.getElementById('startMusic').disabled = true;
 }
 
 // Initialize the first page
