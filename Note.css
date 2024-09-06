@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.book {
+  position: relative;
+  width: 80%; /* Membuat buku lebih lebar */
+  max-width: 800px; /* Membatasi lebar maksimal */
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px; /* Menambahkan sudut membulat */
+}
+
+.cover {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cover h1 {
+  font-size: 3em; /* Ukuran font lebih besar */
+  margin: 0;
+  color: #ff4081; /* Warna teks yang cerah */
+}
+
+.cover p {
+  font-size: 1.5em; /* Ukuran font lebih besar */
+  color: #666;
+}
+
+.cover button {
+  padding: 12px 25px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #ff4081;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px; /* Menambahkan sudut membulat pada tombol */
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.page {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px; /* Menambahkan sudut membulat */
+}
+
+.page.left {
+  background-color: #ffe0f0; /* Warna latar belakang lembut untuk kiri */
+}
+
+.page.right {
+  background-color: #fff9e0; /* Warna latar belakang lembut untuk kanan */
+}
+
+.page .content {
+  max-width: 700px; /* Membatasi lebar konten */
+  margin: auto;
+}
+
+.page .image-container {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+  justify-content: center; /* Menyelaraskan gambar di tengah */
+}
+
+.page .story-image {
+  width: 150px; /* Ukuran gambar lebih besar */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px; /* Menambahkan sudut membulat pada gambar */
+  border: 2px solid #ff4081; /* Garis border warna cerah */
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #ff4081;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px; /* Menambahkan sudut membulat pada tombol */
+}
+
+.whatsapp-button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #25D366; /* Warna hijau WhatsApp */
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px; /* Menambahkan sudut membulat pada tombol */
+  width: fit-content;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efek bayangan pada tombol */
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* Warna hijau WhatsApp saat hover */
+}
